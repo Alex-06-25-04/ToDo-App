@@ -55,4 +55,4 @@ my-todo-app/
 
 ## 📝 License
 
-MIT © 2025 [Ale](https://github.com/tuousername)
+MIT © 2025 [Ale](https://github.com/Alex-06-25-04)
