@@ -1,0 +1,33 @@
+/* Animazione fade in per i nuovi todo */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.todo-item {
+    animation: fadeInSlide 0.3s ease-out;
+}
+
+/* Animazione per completamento */
+@keyframes completedPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.complete-animation {
+    animation: completedPulse 0.4s ease-in-out;
+}

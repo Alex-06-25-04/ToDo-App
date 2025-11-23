@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cartella esperimenti (non pronta)
+utils/classes/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

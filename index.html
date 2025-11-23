@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo App</title>
+
+    <!-- CDN di Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Libreria Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Link to a stylesheet (create styles.css in the same folder if needed) -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-4 sm:py-8 px-4">
+    <header class="text-center mb-6 sm:mb-8">
+        <h1 class="text-3xl sm:text-5xl font-bold text-indigo-600 mb-2">
+            My Todo App
+        </h1>
+        <p class="text-gray-600 text-base sm:text-lg">
+            Organizza le tue attività in modo semplice
+        </p>
+    </header>
+
+    <main class="max-w-2xl mx-auto">
+        <section class="bg-white rounded-2xl shadow-xl p-4 sm:p-8">
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
+                📝 Le tue attività
+            </h2>
+
+            <div id="todoCounter" class="mb-4 p-3 bg-indigo-50 rounded-lg border border-indigo-200">
+                <p class="text-sm text-indigo-700 font-medium text-center">
+                    Caricamento...
+                </p>
+            </div>
+
+            <!-- Container flex per input + button -->
+            <div class="flex flex-col sm:flex-row gap-3 mb-6">
+                <input type="text" id="inputTodo" placeholder="Scrivi qualcosa da fare..."
+                    class="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all" />
+
+                <button id="button"
+                    class="w-full sm:w-auto px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 active:scale-95 transition-all shadow-md hover:shadow-lg">➕
+                    Aggiungi</button>
+            </div>
+
+            <div id="container" class="mt-6">
+                <!-- Elemento dinamico inserito con JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-12 pb-8">
+        <small class="text-gray-600">
+            © 2025 Made with ❤️ by <span class="text-blue-800">Ale</span>
+        </small>
+    </footer>
+
+    <script src="./index.js" defer type="module"></script>
+</body>
+
+</html>
